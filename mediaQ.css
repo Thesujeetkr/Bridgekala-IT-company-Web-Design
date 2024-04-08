@@ -1,0 +1,86 @@
+@media (min-width:200px) and (max-width:640px) {
+
+   header{
+    height: 100px;
+   } 
+   
+   nav ul{
+    display: block;
+    position: absolute;
+    width: 70%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: #eeeeee;
+    padding: 1rem;
+    transform: translate(-100%);
+   }
+   nav ul li{
+    border-bottom: 0.1px solid gray;
+    margin-bottom: 1rem;
+    margin-top: rem;
+   }
+   nav ul img{
+    display: block;
+    width: 180px;
+    margin-bottom: 2rem;
+   }
+   nav ul a{
+    line-height: 200%;
+   }
+   header button{
+    display: none;
+   }
+
+   .myContainer{
+    padding: 1rem;
+   }
+
+   .title-span{
+    margin-top: 2rem;
+    margin-bottom: 1rem !important;
+   }
+   .left-side .title h1{
+    line-height: 100%;
+    font-size: 3rem;
+   }
+   .hero-section p{
+    font-size: 1rem;
+   }
+   .hero-img img{
+    width: 100%;
+   }
+   .right-side .overlayImg {
+    left: -45px;
+    width: 127%;
+  }
+
+  .client-carousel{
+    border: 1px solid red;
+    display: none;
+  }
+  .client-logo img {
+    width: 0%;
+    height: 60px;
+  }
+}
+
+
+
+
+/* large -screen */
+@media (min-width:1300px) and (max-width:1600px) {
+    .myContainer{
+        padding: 3rem 12rem;
+    }
+
+    header{
+        padding: 2rem 12rem;
+    }
+    
+      .hero-img img {
+        width: 80%;
+      }
+      
+}
+
