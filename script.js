@@ -15,3 +15,78 @@ const scrollTop = () =>{
 }
 
 scrollBtn.addEventListener('click', scrollTop)
+
+
+// Create a GSAP timeline
+let tl = gsap.timeline();
+
+// Add the animations to the timeline
+tl.to('.overlayImg', {
+     x: 50, 
+     yoyo: true,
+     rotate:-5,
+     duration:4,
+     repeat:-1
+     })
+  .from('.overlayImg', {
+     x: -50 , 
+     rotate:5,
+     duration:4,
+     repeat:-1,
+     yoyo: true,
+    });
+
+// ------------------------------->
+let img = gsap.timeline();
+img.to('.after-serv-img',{
+     x: 50, 
+     yoyo: true,
+     rotate:-5,
+     duration:4,
+     repeat:-1
+})
+img.from('.after-serv-img',{
+     x: -50, 
+     yoyo: true,
+     rotate:-5,
+     duration:4,
+     repeat:-1
+})
+
+// ------------------------------>
+
+const hamburgerMenu = document.querySelector('.menu');
+let isOpen = false;
+
+hamburgerMenu.addEventListener('click', function(){
+    if(isOpen) {
+        document.querySelector('nav').classList.remove('menuOpen');
+
+    } else {
+        document.querySelector('nav').classList.add('menuOpen');
+    }
+    isOpen = !isOpen;
+});
+
+
+let menu = document.querySelector('.menu');
+menu.onclick = function(){
+    menu.classList.toggle('openmenu');
+}
+
+
+// -------------------mobile menu----------------->
+
+const navbar = document.querySelector('nav');
+const hamMenu = document.querySelector('.menu');
+let index = false;
+hamMenu.addEventListener('click', function(){
+    
+    if(index){
+        navbar.classList.remove('navMenu')
+    }
+    else{
+        navbar.classList.add('navMenu')
+    }
+    index =!index;
+})
