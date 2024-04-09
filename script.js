@@ -79,14 +79,17 @@ menu.onclick = function(){
 
 const navbar = document.querySelector('nav');
 const hamMenu = document.querySelector('.menu');
+const navOverlay = document.querySelector('.nav-overlay');
 let index = false;
 hamMenu.addEventListener('click', function(){
     
     if(index){
         navbar.classList.remove('navMenu')
+        navOverlay.classList.remove("navOverlay1");;
     }
     else{
-        navbar.classList.add('navMenu')
+        navbar.classList.add('navMenu');
+        navOverlay.classList.add("navOverlay1");
     }
     index =!index;
-})
+});
