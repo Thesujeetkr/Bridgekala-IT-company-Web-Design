@@ -53,14 +53,18 @@ nav ul {
 nav ul a {
   text-decoration: none;
   color: var(--black-color);
-  font-weight: 600;
+  font-weight: 600; padding: 40px 0px;
 }
 
 nav ul img{
     display: none;
 }
-nav ul a:hover li{
-  animation:uptoDown 0.3s forwards;
+
+nav ul a span{
+  display: inline-block;
+}
+nav ul a:hover span{
+  animation: uptoDown 0.3s forwards;
 }
 
 
