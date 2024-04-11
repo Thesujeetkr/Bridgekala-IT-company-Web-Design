@@ -59,6 +59,20 @@ nav ul a {
 nav ul img{
     display: none;
 }
+nav ul a:hover li{
+  animation:uptoDown 0.3s forwards;
+}
+
+
+@-webkit-keyframes uptoDown {
+  49% {
+    -webkit-transform: translateY(100%); }
+  50% {
+    opacity: 0;
+    -webkit-transform: translateY(-100%); }
+  51% {
+    opacity: 1; } 
+  }
 
 /* ----------------------Reusable Code---------------------- */
 
@@ -375,8 +389,7 @@ p {
   height: 80%;
   border-radius: 0px 100px 100px 0px;
 }
-.about-section img::after {
-}
+
 
 .about-section .left-side {
   width: 100%;
@@ -390,6 +403,11 @@ p {
 .expertise-section .title2 {
   text-transform: uppercase;
   font-size: 1.5rem;
+}
+
+.common-heading .title2{
+  font-size: 2rem;
+  margin-top: 2rem;
 }
 
 .min-box {
@@ -425,13 +443,17 @@ p {
   width: 100%;
 }
 /* ------------------Testimonial-section---------------- */
+.testimonial-section{
+  position: relative;
+}
 .testimonial-card{
   border-radius: 8px;
   padding: 1rem;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
 .testimonial-card p{
-  font-size: 16px;
+  padding: 2rem;
+  font-size: 14px;
 }
 
 .fa-quote-left{
@@ -452,11 +474,15 @@ p {
   font-size: 1.5rem;
 }
 
+.testi-left-side{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
 
+/* ---------------------------Strip-------------------------- */
 
-/* .strip-section{
-  padding: 0rem 3rem;
-} */
 .strip{
   background-image: url("img/bg5.jpg");
   background-position: center;
@@ -497,7 +523,7 @@ p {
   padding: 1rem 2rem;
 }
 
-
+/* --------------------------Contact US------------------------------------ */
 .contact-img img{
   width: 100%;
 }

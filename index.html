@@ -47,20 +47,20 @@
     <link rel="stylesheet" href="mediaQ.css">
   </head>
   <body>
-   <div class="">
+   <div class="header">
     <header>
       <div class="logo">
         <img src="img/logokala.png" alt="" />
       </div>
-      <div class="nav-overaly">
+      <div class="nav-overlay">
         <nav id="nav-menu">
           <ul>
             <img src="img/logokala.png" alt="">
-            <a href="#"><li>Home</li></a>
-            <a href="#"><li>About Us</li></a>
-            <a href="#"><li>Our Services</li></a>
-            <a href="#"><li>Our Work</li></a>
-            <a href="#"><li>Contact Us</li></a>
+            <li><a class="nlink" href="#home-page">Home</a></li>
+            <li><a class="nlink" href="#service-page">Our Services</a></li>
+            <li><a class="nlink" href="#work-page">Our Work</a></li>
+            <li><a class="nlink" href="#about-page">About Us</a></li>
+            <li><a class="nlink" href="#contact-page">Contact Us</a></li>
           </ul>
         </nav>
           <button class="mybtn">Grow Now</button>
@@ -77,7 +77,7 @@
     </header>
    </div>
    
-    <div class="myContainer banner-bg hero-section">
+    <div class="myContainer banner-bg hero-section" id="home-page">
       <div class="container-fluid">
         <div class="row" id="hero-section">
           <div class="col-md-7 col-lg-6">
@@ -158,7 +158,7 @@
   </div>
    
     <!-- ----------------Service-section--------------- -->
-    <div class="myContainer service-section">
+    <div class="myContainer service-section" id="service-page">
       <div class="container-fluid">
         <div class="row">
           <div class="col-md-12">
@@ -267,7 +267,7 @@
       </div>
     </div>
     <!-- ----------------what do you get-section--------------- -->
-    <div class="myContainer afterservice-section">
+    <div class="myContainer afterservice-section" id="work-page">
       <div class="container-fluid">
         <div class="row">
           <div class="col-md-6">
@@ -448,7 +448,7 @@
     </div>
 
     <!-- -------------------About------------------------ -->
-    <div class="myContainer about-section">
+    <div class="myContainer about-section" id="about-page">
       <div class="container-fluid bg-img">
         <div class="row">
           <div class="col-md-6">
@@ -472,7 +472,9 @@
              <p><i class="fa-regular fa-circle-check"></i> The growth of your enterprise is the focus of the best strategies.</p>
              <p><i class="fa-regular fa-circle-check"></i> We market your vision, in the most appropriate manner.</p>
              <p><i class="fa-regular fa-circle-check"></i> We create with the optimal success for your project in mind.</p>
-             <button class="mybtn">Read More</button>
+             <div class="section-btn">
+              <button class="mybtn">Read More</button>
+             </div>
             </div>
           </div>
         </div>
@@ -491,7 +493,7 @@
         </div>
         <div class="row" >
           <div class="col-md-4">
-            <div class="min-box">
+            <div class="min-box min-box1">
               <div>
                 <div class="title2">
                   RESEARCH <br> STRATEGY
@@ -500,7 +502,7 @@
               </div>
               <div class="img-div"><img src="img/settings.png" alt=""></div>
             </div>
-            <div class="min-box">
+            <div class="min-box min-box1">
               <div>
                 <div class="title2">
                   CONTENT PRODUCTION
@@ -509,7 +511,7 @@
               </div>
               <div class="img-div"><img src="img/settings.png" alt=""></div>
             </div>
-            <div class="min-box">
+            <div class="min-box min-box1">
               <div>
                 <div class="title2">
                   DESIGN AND DEVELOPMENT
@@ -569,19 +571,21 @@
       <div class="container-fluid">
         <div class="row">
           <div class="col-md-6">
-            <div class="title1">
-              TESTMONIALS
+            <div class="testi-left-side">
+              <div class="title1">
+                TESTMONIALS
+              </div>
+              <div class="title2">
+                WHAT OUR CLIENTS HAVE TO SAY
+              </div>
+              <p>
+                See how Bridgekala assisted significant enterprises around the world to create impactful businesses that drove profits and cultivated growth.
+              </p>
             </div>
-            <div class="title2">
-              WHAT OUR CLIENTS HAVE TO SAY
-            </div>
-            <p>
-              See how Bridgekala assisted significant enterprises around the world to create impactful businesses that drove profits and cultivated growth.
-            </p>
           </div>
           <div class="col-md-6">
             <div class="owl-carousel owl-carousel1 owl-theme testimonial-card">
-              <div class="item">
+              <div class="item testimonial-box">
                 <p>For video interviews during a trade fair in the Trade Convention Center, we required a film team. I looked about, nothing I discovered even came close to their competence or quality, so we hired them. They did an amazing job!!</p>
                 <div class="quote-mark">
                   <i class="fa-solid fa-quote-left"></i>
@@ -590,7 +594,7 @@
                   </h2>
                 </div>
               </div>
-              <div class="item">
+              <div class="item testimonial-box">
                 <p>For video interviews during a trade fair in the Trade Convention Center, we required a film team. I looked about, nothing I discovered even came close to their competence or quality, so we hired them. They did an amazing job!!</p>
                 <div class="quote-mark">
                   <i class="fa-solid fa-quote-left"></i>
@@ -599,7 +603,7 @@
                   </h2>
                 </div>
               </div>
-              <div class="item">
+              <div class="item testimonial-box">
                 <p>For video interviews during a trade fair in the Trade Convention Center, we required a film team. I looked about, nothing I discovered even came close to their competence or quality, so we hired them. They did an amazing job!!</p>
                 <div class="quote-mark">
                   <i class="fa-solid fa-quote-left"></i>
@@ -608,7 +612,7 @@
                   </h2>
                 </div>
               </div>
-              <div class="item">
+              <div class="item testimonial-box">
                 <p>For video interviews during a trade fair in the Trade Convention Center, we required a film team. I looked about, nothing I discovered even came close to their competence or quality, so we hired them. They did an amazing job!!</p>
                 <div class="quote-mark">
                   <i class="fa-solid fa-quote-left"></i>
@@ -616,17 +620,9 @@
                   <i class="fa-regular fa-circle"></i>
                   </h2>
                 </div>
-              </div>
-              <div class="owl-nav">
-                <button class="">
-                  <i class="fa-solid fa-arrow-left owl-prev"></i>
-                </button>
-                <button class="">
-                  <i class="fa-solid fa-arrow-left owl-next"></i>
-                </button>
-              </div>
+              </div> 
           </div>
-          </div>
+          </div> 
         </div>
       </div>
     </div>
@@ -637,13 +633,15 @@
           <div class="col-md-12">
             <div class="strip-content strip">
               <div class="title2">Untapped possibilities are waiting for your brand</div>
-            <button>UNVEIL NOW</button>
+            <div class="section-btn">
+              <button>UNVEIL NOW</button>
+            </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="myContainer contactUs">
+    <div class="myContainer contactUs" id="contact-page">
       <div class="container-fluid">
         <div class="row">
           <div class="col-md-6">
@@ -779,9 +777,14 @@
               <p><a href="#">> GMB Profile</a></p>
             </div>
           </div>
+          <div>
+            <p>2024©️ Copyright All rights Reserve</p>
+          </div>
         </div>
       </div>
+      
     </div>
+    
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" ></script>
@@ -804,7 +807,7 @@
         nav: false,
         dots: false,
         autoplay: true,
-        navText:["<i class='fa fa-chevron-left'></i>","<i class='fa fa-chevron-right'></i>"],
+        
 
         responsive: {
           0: {
@@ -824,6 +827,7 @@
         nav: true,
         dots: false,
         autoplay: true,
+        navText:["<i class='fa-solid fa-arrow-left'></i>","<i class='fa-solid fa-arrow-right'></i>"],
 
         responsive: {
           0: {

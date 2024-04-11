@@ -55,17 +55,19 @@ img.from('.after-serv-img',{
 
 // ------------------------------>
 
-const hamburgerMenu = document.querySelector('.menu');
-let isOpen = false;
 
-hamburgerMenu.addEventListener('click', function(){
-    if(isOpen) {
-        document.querySelector('nav').classList.remove('menuOpen');
 
-    } else {
-        document.querySelector('nav').classList.add('menuOpen');
-    }
-    isOpen = !isOpen;
+
+// -------------------mobile menu----------------->
+
+const navbar = document.querySelector('nav');
+const hamMenu = document.querySelector('.menu');
+const navOverlay = document.querySelector('.nav-overlay');
+// let index = false;
+hamMenu.addEventListener('click', function(){
+    
+    navbar.classList.toggle('navMenu')
+    
 });
 
 
@@ -75,21 +77,12 @@ menu.onclick = function(){
 }
 
 
-// -------------------mobile menu----------------->
 
-const navbar = document.querySelector('nav');
-const hamMenu = document.querySelector('.menu');
-const navOverlay = document.querySelector('.nav-overlay');
-let index = false;
-hamMenu.addEventListener('click', function(){
-    
-    if(index){
-        navbar.classList.remove('navMenu')
-        navOverlay.classList.remove("navOverlay1");;
-    }
-    else{
-        navbar.classList.add('navMenu');
-        navOverlay.classList.add("navOverlay1");
-    }
-    index =!index;
-});
+const navLink = document.querySelectorAll('.nlink');
+
+navLink.forEach(tab =>{
+    tab.addEventListener('click', ()=>{
+        navbar.classList.remove('navMenu');
+        menu.classList.remove('openmenu');
+    })
+})
